@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+    /* ----header starts--- */
+
+header{
+    width: 100%;
+    background-color: gray;
+}
+
+.nav_container{
+    width: 90%;
+    /* background-color: red; */
+    margin-left: 5%;
+    font-size: 0px;
+}
+
+.logo{
+    width: 20%;
+    height: 70px;
+    /* background-color: yellow; */
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    text-align: center;
+    line-height: 70px;
+    font-family: segoe ui;
+    font-weight: bold;
+}
+
+nav{
+    width: 40%;
+    /* background-color: white; */
+    display: inline-block;
+    margin-left: 40%;
+    font-size: 0px;
+}
+.nav_list{
+    font-size: 14px;
+    display: inline-block;
+    /* background-color: yellow; */
+    width: 25%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+    
+    /* ---header ends--- */
+
+
+    /* ---Home starts--- */
+
+.home{
+    width: 100%;
+    background-color: darkgrey;
+}
+
+.cards_container{
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: darkgray; */
+    margin-left: 10%;
+    font-size: 0px;
+}
+
+.card{
+    width: 20%;
+    height: 320px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 4%;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    /* ---Home ends--- */
+
+
+    /* ---Demo starts--- */
+
+.demo{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(145, 128, 128);
+}
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.demo_container{
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* background-color: yellow; */
+    margin-left: 10%;
+    font-size: 0px;
+}
+
+.demo-card{
+    width: 44%;
+    height: 250px;
+    background-color: white;
+    display: inline-block;
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}

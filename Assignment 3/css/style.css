@@ -154,7 +154,7 @@ nav>ul>li>a:hover{
 }
 
 .banner_style{
-    background-color: red;
+    background-color: rgb(245, 17, 17);
     width: 80%;
     aspect-ratio: 1;
     position: absolute;
@@ -211,7 +211,8 @@ nav>ul>li>a:hover{
 
 .products{
     flex-direction: column;
-    padding: 20px 0px;
+    padding: 20px 0px 40px;
+    gap: 10px;
     background-color: rgb(33, 193, 79);
 }
 
@@ -219,14 +220,14 @@ nav>ul>li>a:hover{
     /* background-color: red; */
     min-height: 100vh;
     flex-wrap: wrap;
-    column-gap: 2%;
-    row-gap: 20px;
+    column-gap: 6.6%;
+    row-gap: 40px;
 }
 
 .product{
     /* background-color: yellow; */
-    max-width: 18%;
-    height: 300px;
+    max-width: 20%;
+    min-height: 320px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -238,7 +239,7 @@ nav>ul>li>a:hover{
     transition: .4s ease-in-out;
 }
 .product:hover{
-    transform: translateY(-8px);
+    transform: translateY(-15px);
 }
 .product:nth-child(1){
     background-image: url(../assets/images/product-1.jpg);
@@ -266,33 +267,38 @@ nav>ul>li>a:hover{
 }
 
 .product_content{
-    background-color: rgb(254, 169, 51);
+    background-color: rgba(218, 208, 208, 0.603);
     padding: 10px;
-    width: 30%;
-    height: 15%;
-    margin-bottom: -10px;
-    border-top-right-radius: 50px;
+    width: 100%;
+    height: 58%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: -50%;
     cursor: pointer;
     transition: .4s ease-in-out;
+    border-radius: 50%;
 }
 
 .product:hover > .product_content{
     background-color: rgba(218, 208, 208, 0.603);
     width: 100%;
-    margin: 0px;
+    margin: 0;
     height: 60%;
     border-radius: 0;
 }
 
 .product_price{
-    font-size: 18px;
-    font-weight: 500;
+    /* font-size: 18px; */
+    font-weight: 600;
     color: rgb(0, 0, 0);
 }
 
 .product_title{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
 }
@@ -327,7 +333,7 @@ nav>ul>li>a:hover{
 
 .gall_title{
     width: 9%;
-    height: 100vh;
+    height: 90vh;
     /* background-color: yellow; */
     display: flex;
     justify-content: center;
@@ -344,7 +350,7 @@ nav>ul>li>a:hover{
 .gallery_container{
     /* background-color: red; */
     width: 82%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     position: relative;
 }
@@ -415,7 +421,7 @@ nav>ul>li>a:hover{
 .contact{
     min-height: 90vh;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-top: 20px;
     background-image: url(../assets/images/contact.jpg);
     background-size: cover;
@@ -492,7 +498,6 @@ nav>ul>li>a:hover{
 }
 
 .subscribe_container>p{
-    font-size: 18px;
     text-transform: uppercase;
     word-spacing: 2px;
     color: rgb(255, 255, 255);
@@ -554,10 +559,10 @@ footer{
     gap: 10px;
 }
 
-.footer_content>h1{
+.footer_content>h3{
     color: rgb(255, 255, 255);
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -566,7 +571,6 @@ footer{
 {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 18px;
 }
 .footer_content>p{
     text-transform: none;

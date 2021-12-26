@@ -69,3 +69,24 @@ body>.container{
 .container>a:nth-child(3){
     background-image: url('./Assets/media/Assignment\ -3\ \(Fashion-Site\)\ -\ .jpg');
 }
+
+
+/* responisveness css */
+
+@media (max-width:430px) {
+
+    body>h1{
+        font-size: 20px;
+    }
+
+    .container>a{
+        width: 90%;
+        height: 60vh;
+    }
+
+    .container>a>div{
+        font-size: 26px;
+        line-height: 60vh;
+    }
+    
+}

@@ -1,0 +1,188 @@
+@media (max-width:430px){
+    /* =================
+        Header starts
+    ====================*/
+    .logo{
+        width: 100%;
+    }
+
+    .nav_list_container{
+        width: 100%;
+        margin: 0px;
+        height: 0px;
+        transition: .4s ease-in-out;
+        overflow: hidden;
+    }
+
+    .logo:hover ~ .nav_list_container{
+        height: 200px;
+    }
+
+    .nav_item{
+        width: 100%;
+    }
+    /* =================
+        Header Ends
+    ====================*/
+
+
+
+    /* =================
+        Banner Starts
+    ====================*/
+
+    .banner{
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .banner_img{
+        margin-top: -20px;
+    }
+
+    /* =================
+        Banner Ends
+    ====================*/
+
+
+
+
+    /* =================
+        Places starts
+    ====================*/
+
+    .place_container{
+        width: 98%;
+        margin: auto;
+    }
+
+
+    .place-card{
+        width: 46%;
+        margin-left: 2%;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+
+    .place_image{
+        width: 110%;
+        height: 100px;
+    }
+
+    .place_desc{
+        padding: 10px 0px;
+        padding-left: 3px;
+    }
+
+    .place_title{
+        font-size: 13px;
+    }
+
+    .place_btn{
+        padding: 10px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    /* =================
+        Places Ends
+    ====================*/
+
+
+
+    /* =================
+        About Starts
+    ====================*/
+
+    .about_container{
+        width: 94%;
+        margin: auto;
+        padding: 0px;
+        /* background-color: red; */
+    }
+
+    .about_image{
+        width: 100%;
+        height: auto;
+    }
+
+    .about_desc{
+        width: 100%;
+        text-align: justify;
+        font-size: 13px;
+    }
+
+    .first_word{
+        font-size: 20px;
+    }
+
+    /* =================
+        About Ends
+    ====================*/
+
+
+
+    /* =================
+        Extra Starts
+    ====================*/
+
+    .extra_desc{
+        font-size: 20px;
+    }
+
+    .btn{
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+
+    /* =================
+        Extra Ends
+    ====================*/
+
+
+
+    /* =================
+        Gallery Starts
+    ====================*/
+
+    .gal_left{
+        width: 100%;
+    }
+
+    .img_container{
+        height: 100px;
+        overflow: hidden;
+        line-height: 100px;
+    }
+
+    .img_container2{
+        height: auto;
+        overflow: hidden;
+    }
+
+    .gal_right{
+        width: 100%;
+    }
+
+    .load_more{
+        font-size: 20px;
+    }
+
+    /* =================
+        Gallery Ends
+    ====================*/
+
+
+
+}
+    /* =================
+        Footer Starts
+    ====================*/
+
+    footer{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    /* =================
+        Footer Ends
+    ====================*/

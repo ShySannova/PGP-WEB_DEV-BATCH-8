@@ -168,6 +168,7 @@ nav>ul>li>a:hover{
     height: 64%;
     padding: 20px 0px;
     display: flex;
+    align-self: center;
     flex-direction: column;
     gap: 20px;
     z-index: 2;

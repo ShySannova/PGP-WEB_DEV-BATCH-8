@@ -102,7 +102,7 @@
         /* background-size: 110%; */
     }
 
-    .product:hover > .product_content,.hide_content{
+    .product:hover > .product_content{
         height: 70%;
     }
 

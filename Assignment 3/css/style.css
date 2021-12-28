@@ -295,7 +295,7 @@ nav>ul>li>a:hover{
     transition: .4s ease-in-out;
 }
 
-.product:hover > .product_content,.hide_content{
+.product:hover > .product_content{
     background-color: rgba(218, 208, 208, 0.603);
     width: 100%;
     height: 60%;
@@ -303,6 +303,7 @@ nav>ul>li>a:hover{
 }
 .product:hover .hide_content{
     background-color: transparent;
+    height: 60%;
 }
 
 .product_price{

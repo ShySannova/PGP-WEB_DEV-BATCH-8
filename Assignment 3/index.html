@@ -24,7 +24,7 @@
                 <li><a href="#gallery">gallery</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
-            <div class="logo"><a href="index.html">Modern-Fashion</a></div>
+            <div class="logo"><a href="index.html" id="logo">Modern-Fashion</a></div>
         </nav>
     </header>
 
@@ -337,6 +337,7 @@
             if(window.pageYOffset>=36){
                 document.getElementById('header').style.backgroundColor="rgba(255, 255, 255, 0.9)";
                 document.getElementById('header').style.boxShadow="0px 2px 2px gray";
+                document.getElementById('logo').style.color="rgb(0, 0, 0)";
             }
             else{
                 document.getElementById('header').style.backgroundColor="transparent";

@@ -129,7 +129,6 @@ nav>ul>li>a:hover{
     font-weight: 400;
     text-align: center;
     letter-spacing: 1px;
-    color: rgb(255, 255, 255);
     transition: .4s ease-in-out;
 }
 
@@ -148,6 +147,7 @@ nav>ul>li>a:hover{
     height: 85vh;
     background-image: url(../assets/images/banner1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 
@@ -161,10 +161,10 @@ nav>ul>li>a:hover{
 .banner_style{
     /* background-color: rgb(245, 17, 17); */
     background-color: rgba(255, 255, 255, 0.9);
-    width: 80%;
+    width: 90%;
+    left: -40%;
     aspect-ratio: 1;
     position: absolute;
-    left: -30%;
     transform: rotate(45deg);
 }
 
@@ -178,6 +178,7 @@ nav>ul>li>a:hover{
     flex-direction: column;
     gap: 20px;
     z-index: 2;
+    justify-content: center;
 }
 
 .banner_content>h1{

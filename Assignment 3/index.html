@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion Site</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/responisve.css">
+    <link rel="stylesheet" href="./css/reset-global.css">
+    <link rel="stylesheet" href="./css/portrait.css">
+    <link rel="stylesheet" href="./css/landscape.css">
 </head>
 <body>
 
@@ -14,6 +15,7 @@
 
     <header id="header">
         <nav>
+            <div class="logo"><a href="index.html" id="logo">Modern-Fashion</a></div>
             <ul>
                 <div class="menu">
                     <div class="line"></div>
@@ -24,7 +26,6 @@
                 <li><a href="#gallery">gallery</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
-            <div class="logo"><a href="index.html" id="logo">Modern-Fashion</a></div>
         </nav>
     </header>
 
@@ -59,7 +60,6 @@
         <h1 class="title">PRODUCTS FOR EVERYONE.</h1>
         <div class="container products_container">
             <div class="product">
-                <div class="product_img"></div>
                 <div class="product_content">
                     <p class="product_price">$30</p>
                     <h1 class="product_title">black t-shirt</h1>
@@ -223,7 +223,7 @@
     <!-- ========Testimonials Starts======== -->
 
     <section class="testimonials">
-        <div class="title">Testimonials</div>
+        <h1 class="title">Testimonials</h1>
         <div class="testimonial_container">
             <div class="slider">
                 <div class="testimonial_content">
@@ -344,9 +344,7 @@
                 document.getElementById('header').style.boxShadow="none";
             }
         }
-        
-
-    
     </script>
+
 </body>
 </html>

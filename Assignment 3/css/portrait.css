@@ -85,7 +85,7 @@
 
     .banner{
         padding-top: 4rem;
-        background-image: url('./assets/images/mbanner1.jpg');
+        background-image: url('../assets/images/mbanner1.jpg');
         overflow: hidden;
     }
 

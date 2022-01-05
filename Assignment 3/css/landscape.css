@@ -795,5 +795,18 @@ footer{
 
 }
 
+@media (min-width: 1600px) and (orientation: landscape){
+    html{
+        font-size: 80%;
+    }
+    .products_container{
+        column-gap: 6.66%;
+    }
+    .product{
+        max-width: 20%;
+        height: 400px;
+    }
+}
+
 
 

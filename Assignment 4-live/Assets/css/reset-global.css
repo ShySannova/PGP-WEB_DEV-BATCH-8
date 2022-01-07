@@ -1,0 +1,326 @@
+/*  ===================
+        Reset Starts
+    =================== */
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-family: 'poppins','Segoe UI';
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol{
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/*  ===================
+        Reset Ends
+    =================== */
+
+
+
+
+
+
+/*  ===========================
+        Utility Class Starts
+    =========================== */
+
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-block: 2rem;
+    }
+
+    .main__container{
+        width: 80%;
+        display: flex;
+    }
+
+    .flex--column{
+        flex-direction: column;
+    }
+
+    .main--center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+/*  ============================
+        Utility Class Ends
+    ============================ */
+
+
+
+
+
+header{
+    width: 100%;
+    /* height: 75px; */
+    /* background-color: gray; */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navigation{
+  font-size: 1.2rem;
+  border-bottom: 1px solid darkgray;
+  padding-block: 1.5rem;
+}
+
+.navigation__logo{
+    width: 35%;
+    height: 3.5rem;
+    background-image: url('../images/logo.png');
+    background-position: 0 -186px;
+}
+
+.navigation__left_panel{
+    width: 52%;
+}
+
+.navigation__search{
+    width: 70%;
+    height: 3.5rem;
+    padding-block: 1rem;
+    border-radius: 5vw;
+    /* background-color: lightgray; */
+}
+
+input[type='search']{
+    width: 80%;
+    height: 3.5rem;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+input[type='search']::placeholder{
+  color: rgb(177, 153, 153);
+}
+
+.navigation__search> .fas,
+.navigation__right_panel .fas{
+  font-size: 1.7rem;
+  color: white;
+}
+
+.navigation__right_panel{
+  width: 22%;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+}
+
+.navigation__right_panel>li>a{
+  /* font-size: 1.3rem; */
+  color: white;
+  padding-bottom: 2.8rem;
+}
+
+.navigation__right_panel>li>a:hover{
+  border-bottom: .3rem solid #ff5100;
+}
+
+.banner{
+  height: 100vh;
+  position: relative;
+}
+.banner__img{
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(65%);
+  -webkit-filter: brightness(65%);
+  position: absolute;
+}
+
+.banner__container{
+  position: absolute;
+  color: white;
+  text-align: center;
+  /* background-color: yellow; */
+  align-self: flex-end;
+  gap: 0;
+}
+
+.banner__container>h1{
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.sliderContainer{
+  height: 12rem;
+  overflow: hidden;
+  /* background-color: yellow; */
+  margin-bottom: 3rem;
+}
+
+.slider{
+  animation-name: verticalSlider;
+  animation-delay: 5s;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.slider__topic{
+  height: 12rem;
+  font-size: 8.8rem;
+  line-height: 12rem;
+  font-weight: 600;
+}
+
+@keyframes verticalSlider {
+  12.5%{
+    margin-top: -12rem;
+  }
+  25%{
+    margin-top: -12rem;
+  }
+  37.5%{
+    margin-top: -24rem;
+  }
+  50%{
+    margin-top: -24rem;
+  }
+  62.5%{
+    margin-top: -36rem;
+  }
+  75%{
+    margin-top: -36rem;
+  }
+  87.5%{
+    margin-top: -48rem;
+  }
+  100%{
+    margin-top: -48rem;
+  }
+}
+
+.tags{
+  gap: 0;
+  border-radius: .8rem;
+  overflow: hidden;
+}
+
+.tags>div{
+  background-color:#454f63;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.tags>div:hover{
+  background-color:#ff5300;
+}
+
+.tags>div:nth-child(even){
+  border-inline: .1rem solid white;
+}
+
+.banner__search{
+  width: 90%;
+  background-color: white;
+  border-radius: .8rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  justify-content: space-between;
+  margin-bottom: 15rem;
+}
+.banner__search>input{
+  font-size: 2rem;
+}
+
+.banner__search>.fas{
+  font-size: 2rem;
+  color: #454f63;
+}
+
+
+.statsContainer{
+  width: 100%;
+  justify-content: space-evenly;
+  color: #acacac;;
+}
+
+.fab{
+  font-size: 3.6rem;
+}
+
+.stats__item:hover{
+  color: white;
+}
+
+.stats__content{
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+
+

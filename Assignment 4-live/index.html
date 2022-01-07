@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Thrillophilia</title>
+    <link rel="stylesheet" href="./Assets/css/reset-global.css">
+    <link rel="stylesheet" href="./Assets/css/portrait-mode.css">
+    <link rel="stylesheet" href="./Assets/css/landscape-mode.css">
+    <link rel="stylesheet" href="./Assets/Icon-Pack/css/all.css">
+</head>
+<body>
+    <header id="header" class="header main--center">
+        <nav class="navigation main__container main--center">
+            <div class="navigation__left_panel main--center">
+                <span class="navigation__logo"></span>
+                <span class="navigation__search main--center">
+                    <i class="nav-i fas fa-search"></i>
+                    <input type="search" placeholder="Search Destination, Tours, Activities" id="">
+                </span> 
+            </div>
+            
+            <ul class="navigation__right_panel main--center">
+                <li><a href="#"><i class=" nav-i fas fa-gift"></i> Gift an Experience</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </header>    
+    
+    <section class="banner">
+        <div class="banner__img">
+
+        </div>
+        <div class="banner__container main__container flex--column main--center">
+        
+            <h1>It's time for new</h1>
+            
+           
+            <div class="sliderContainer">
+                <div class="slider">
+                   <div class="slider__topic">Experiences</div>
+                   <div class="slider__topic">Adventures</div>
+                   <div class="slider__topic">Escapes</div>
+                   <div class="slider__topic">Thrills</div>
+                   <div class="slider__topic">Experiences</div>
+                </div>
+            </div>
+            <div class="tags main--center">
+                <div><i class="fas fa-globe-asia"></i> All</div>
+                <div><i class="fas fa-skating"></i> Activities</div>
+                <div><i class="fas fa-plane"></i> Tours</div>
+                <div><i class="fas fa-car"></i> Rentals</div>
+                <div><i class="fas fa-hotel"></i> Staycautions</div>
+            </div>
+            <div class="banner__search main--center">
+                <input type="search" placeholder="Search Destination, Tours, Activities" id="">
+                <i class="fas fa-search"></i>
+            </div> 
+            <div class="statsContainer main--center">
+                <div class="stats__item main--center">
+                    <i class="fab fa-angellist"></i>
+                    <div class="stats__content">
+                        <p>24,000+</p>
+                        <p>TRAVEL EXPERIENCES</p>
+                    </div>
+
+                </div>
+                <div class="stats__item main--center">
+                    <i class="fab fas fa-globe-americas"></i>
+                    <div class="stats__content">
+                        <p>55+</p>
+                        <p>COUNTRIES</p>
+                    </div>
+
+                </div>
+                <div class="stats__item main--center">
+                    <i class="fab fas fa-hand-holding-usd"></i>
+                    <div class="stats__content">
+                        <p>Best Price</p>
+                        <p>GUARANTEED</p>
+                    </div>
+
+                </div>
+                <div class="stats__item main--center">
+                    <i class="fab fas fa-users"></i>
+                    <div class="stats__content">
+                        <p>84 Million+</p>
+                        <p>USER PER YEAR</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="banner">
+
+    </section>
+
+
+
+
+
+
+
+
+    <script>
+
+        let header = document.getElementById('header');
+        let logo = document.querySelector('.navigation__logo');
+        let search = document.querySelector('.navigation__search');
+        let icon = document.querySelectorAll('.nav-i');
+        let rightPanel = document.querySelectorAll('.navigation__right_panel a');
+
+        window.onscroll = function changeColor(){
+            if (window.pageYOffset>75) {
+                header.style.backgroundColor = "rgba(255, 255, 255, 1)";
+                search.style.backgroundColor = "#e5e5e5";
+                logo.style.backgroundPositionY ="-221px"
+                for (let i= 0; i< icon.length; i++) {
+                    icon[i].style.color = "black";
+                }
+                for (let i= 0; i< rightPanel.length; i++) {
+                    rightPanel[i].style.color = "black";
+                }
+                
+            } else {
+                header.style.backgroundColor = "transparent";
+                search.style.backgroundColor = "transparent";
+                logo.style.backgroundPositionY ="-186px"
+                for (let i= 0; i< icon.length; i++) {
+                    icon[i].style.color = "white";
+                }
+                for (let i= 0; i< rightPanel.length; i++) {
+                    rightPanel[i].style.color = "white";
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

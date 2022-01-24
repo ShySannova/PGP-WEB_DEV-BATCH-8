@@ -1,216 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clone Thrillophilia</title>
-    <link rel="stylesheet" href="./Assets/css/reset-global.css">
-    <link rel="stylesheet" href="./Assets/css/portrait-mode.css">
-    <link rel="stylesheet" href="./Assets/css/landscape-mode.css">
-    <link rel="stylesheet" href="./Assets/Icon-Pack/css/all.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./Assets/css/reset-global.css" />
+    <link rel="stylesheet" href="./Assets/css/portrait-mode.css" />
+    <link rel="stylesheet" href="./Assets/css/landscape-mode.css" />
+    <link rel="stylesheet" href="./Assets/Icon-Pack/css/all.css" />
+  </head>
+  <body>
     <header id="header" class="header main--center">
-        <nav class="navigation main__container main--center">
-            <div class="navigation__left_panel main--center">
-                <span class="navigation__logo"></span>
-                <span class="navigation__search main--center">
-                    <i class="nav-i fas fa-search"></i>
-                    <input type="search" placeholder="Search Destination, Tours, Activities" id="">
-                </span> 
-            </div>
-            
-            <ul class="navigation__right_panel main--center">
-                <li><a href="#"><i class=" nav-i fas fa-gift"></i> Gift an Experience</a></li>
-                <li><a href="#">Log In</a></li>
-            </ul>
-        </nav>
-    </header>    
-    
+      <nav class="navigation main__container main--center">
+        <div class="navigation__left_panel main--center">
+          <span class="navigation__logo"></span>
+          <span class="navigation__search main--center">
+            <i class="nav-i fas fa-search"></i>
+            <input
+              type="search"
+              placeholder="Search Destination, Tours, Activities"
+              id=""
+            />
+          </span>
+        </div>
+
+        <ul class="navigation__right_panel main--center">
+          <li>
+            <a href="#"><i class="nav-i fas fa-gift"></i> Gift an Experience</a>
+          </li>
+          <li><a href="#">Log In</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <section class="banner">
-        <div class="banner__img">
+      <div class="banner__img"></div>
+      <div class="banner__container main__container flex--column main--center">
+        <h1>It's time for new</h1>
 
+        <div class="sliderContainer">
+          <div class="slider">
+            <div class="slider__topic">Experiences</div>
+            <div class="slider__topic">Adventures</div>
+            <div class="slider__topic">Escapes</div>
+            <div class="slider__topic">Thrills</div>
+            <div class="slider__topic">Experiences</div>
+          </div>
         </div>
-        <div class="banner__container main__container flex--column main--center">
-        
-            <h1>It's time for new</h1>
-            
-           
-            <div class="sliderContainer">
-                <div class="slider">
-                   <div class="slider__topic">Experiences</div>
-                   <div class="slider__topic">Adventures</div>
-                   <div class="slider__topic">Escapes</div>
-                   <div class="slider__topic">Thrills</div>
-                   <div class="slider__topic">Experiences</div>
-                </div>
-            </div>
-            <div class="tags main--center">
-                <div><i class="fas fa-globe-asia"></i> All</div>
-                <div><i class="fas fa-skating"></i> Activities</div>
-                <div><i class="fas fa-plane"></i> Tours</div>
-                <div><i class="fas fa-car"></i> Rentals</div>
-                <div><i class="fas fa-hotel"></i> Staycautions</div>
-            </div>
-            <div class="banner__search main--center">
-                <input type="search" placeholder="Search Destination, Tours, Activities" id="">
-                <i class="fas fa-search"></i>
-            </div> 
-            <div class="statsContainer main--center">
-                <div class="stats__item main--center">
-                    <i class="fab fa-angellist"></i>
-                    <div class="stats__content">
-                        <p>24,000+</p>
-                        <p>TRAVEL EXPERIENCES</p>
-                    </div>
-
-                </div>
-                <div class="stats__item main--center">
-                    <i class="fab fas fa-globe-americas"></i>
-                    <div class="stats__content">
-                        <p>55+</p>
-                        <p>COUNTRIES</p>
-                    </div>
-
-                </div>
-                <div class="stats__item main--center">
-                    <i class="fab fas fa-hand-holding-usd"></i>
-                    <div class="stats__content">
-                        <p>Best Price</p>
-                        <p>GUARANTEED</p>
-                    </div>
-
-                </div>
-                <div class="stats__item main--center">
-                    <i class="fab fas fa-users"></i>
-                    <div class="stats__content">
-                        <p>84 Million+</p>
-                        <p>USER PER YEAR</p>
-                    </div>
-
-                </div>
-            </div>
+        <div class="tags main--center">
+          <div><i class="fas fa-globe-asia"></i> All</div>
+          <div><i class="fas fa-skating"></i> Activities</div>
+          <div><i class="fas fa-plane"></i> Tours</div>
+          <div><i class="fas fa-car"></i> Rentals</div>
+          <div><i class="fas fa-hotel"></i> Staycautions</div>
         </div>
+        <div class="banner__search main--center">
+          <input
+            type="search"
+            placeholder="Search Destination, Tours, Activities"
+            id=""
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="statsContainer main--center">
+          <div class="stats__item main--center">
+            <i class="fab fa-angellist"></i>
+            <div class="stats__content">
+              <p>24,000+</p>
+              <p>TRAVEL EXPERIENCES</p>
+            </div>
+          </div>
+          <div class="stats__item main--center">
+            <i class="fab fas fa-globe-americas"></i>
+            <div class="stats__content">
+              <p>55+</p>
+              <p>COUNTRIES</p>
+            </div>
+          </div>
+          <div class="stats__item main--center">
+            <i class="fab fas fa-hand-holding-usd"></i>
+            <div class="stats__content">
+              <p>Best Price</p>
+              <p>GUARANTEED</p>
+            </div>
+          </div>
+          <div class="stats__item main--center">
+            <i class="fab fas fa-users"></i>
+            <div class="stats__content">
+              <p>84 Million+</p>
+              <p>USER PER YEAR</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    
+
     <section class="Escape">
-        <div class="escape__container main__container main--center">
-            <div class="escape__content">
-                <h1>Find The Perfect Escape</h1>
-                <br>
-                <hr>
-                <br>
-                <h4>Discover your ideal Experience</h4>
-            </div>
-            <div class="escape__images main--center">
-                <a href="">
-                    <img src="./Assets/images/escpae-1.jpg" alt="">
-                </a>
-                <a href="">
-                    <img src="./Assets/images/escape-2.jpg" alt="">
-                </a>
-                <a href="">
-                    <img src="./Assets/images/escape-3.jpg" alt="">
-                </a>
-            </div>
+      <div class="escape__container main__container main--center">
+        <div class="escape__content">
+          <h1>Find The Perfect Escape</h1>
+          <br />
+          <hr />
+          <br />
+          <h4>Discover your ideal Experience</h4>
         </div>
+        <div class="escape__images main--center">
+          <a href="">
+            <img src="./Assets/images/escpae-1.jpg" alt="" />
+          </a>
+          <a href="">
+            <img src="./Assets/images/escape-2.jpg" alt="" />
+          </a>
+          <a href="">
+            <img src="./Assets/images/escape-3.jpg" alt="" />
+          </a>
+        </div>
+      </div>
     </section>
 
     <section class="ad">
-        <div class="ad__container main__container main--center">
-            <div class="ad__discount main--center">
-                <a href=""><img src="./Assets/images/ad-banner.jpg" alt=""></a>
-                <div class="ad__content main--center flex--column">
-                    <div>UPTO</div>
-                    <div class="discount__value main--center">
-                        <div>50</div>
-                        <div class="discount__right_value">
-                            <div>%</div>
-                            <div>OFF</div>
-                        </div>
-                    </div>
-                    <div>Holiday Packages</div>
-                    <button class="book_btn">Book Now</button>
+      <div class="ad__container main__container main--center">
+        <div class="ad__discount main--center">
+          <a href=""><img src="./Assets/images/ad-banner.jpg" alt="" /></a>
+          <div class="ad__content main--center flex--column">
+            <div>UPTO</div>
+            <div class="discount__value main--center">
+              <div>50</div>
+              <div class="discount__right_value">
+                <div>%</div>
+                <div>OFF</div>
+              </div>
+            </div>
+            <div>Holiday Packages</div>
+            <button class="book_btn">Book Now</button>
+          </div>
+        </div>
+        <div class="ad__places">
+          <div>
+            <img src="./Assets/images/Rajasthanjpg.jpg" alt="" /><span
+              ><div>Rajasthan</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/Sikkim.jpg" alt="" /><span
+              ><div>Sikkim</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/HT.jpg" alt="" /><span
+              ><div>Himalayan<br />Treks</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/HImachal-Pradesh.jpg" alt="" /><span
+              ><div>Himachal<br />Pradesh</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/Dubai.jpg" alt="" /><span
+              ><div>Dubai</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/Sri-Lanka.jpg" alt="" /><span
+              ><div>Sri Lanka</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/goa.jpg" alt="" /><span
+              ><div>Goa</div></span
+            >
+          </div>
+          <div>
+            <img src="./Assets/images/Maldives.jpg" alt="" /><span
+              ><div>Maldives</div></span
+            >
+          </div>
+          <div>
+            <a href=""><button>View All</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="places_banner">
+      <div class="slider__container main__container">
+        <div class="places_slider">
+          <div><img src="./Assets/images/ktm-banner.jpg" alt="" /></div>
+          <div><img src="./Assets/images/dubai-banner.jpg" alt="" /></div>
+          <div>
+            <img src="./Assets/images/discover-dubai-banner.jpg" alt="" />
+          </div>
+          <div><img src="./Assets/images/yas-island-banner.jpg" alt="" /></div>
+          <div><img src="./Assets/images/saudi-banner.jpg" alt="" /></div>
+          <div><img src="./Assets/images/ktm-banner.jpg" alt="" /></div>
+        </div>
+        <div class="dot">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="kashmir">
+      <div class="kashmir__container main__container main--center flex--column">
+        <h1 class="title main--center flex--column">Best Of Kashmir</h1>
+        <div class="cards__container">
+          <div class="cards__slider main--center">
+            <div class="card">
+              <div class="card__img">
+                <img id="left" src="./Assets/images/k-1.jpg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
                 </div>
-                
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
             </div>
-            <div class="ad__places">
-                <div><img src="./Assets/images/Rajasthanjpg.jpg" alt=""><span><div>Rajasthan</div></span></div>
-                <div><img src="./Assets/images/Sikkim.jpg" alt=""><span><div>Sikkim</div></span></div>
-                <div><img src="./Assets/images/HT.jpg" alt=""><span><div>Himalayan<br>Treks</div></span></div>
-                <div><img src="./Assets/images/HImachal-Pradesh.jpg" alt=""><span><div>Himachal<br>Pradesh</div></span></div>
-                <div><img src="./Assets/images/Dubai.jpg" alt=""><span><div>Dubai</div></span></div>
-                <div><img src="./Assets/images/Sri-Lanka.jpg" alt=""><span><div>Sri Lanka</div></span></div>
-                <div><img src="./Assets/images/goa.jpg" alt=""><span><div>Goa</div></span></div>
-                <div><img src="./Assets/images/Maldives.jpg" alt=""><span><div>Maldives</div></span></div>
-                <div><a href=""><button>View All</button></a></div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./Assets/images/k-2.jpeg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
             </div>
+
+            <div class="card">
+              <div class="card__img">
+                <img src="./Assets/images/k-3.jpeg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./Assets/images/k-4.jpg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./Assets/images/k-5.jpeg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./Assets/images/k-6.jpeg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./Assets/images/k-7.jpg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img id="right" src="./Assets/images/k-8.jpeg" alt="" />
+                <div class="gps">
+                  <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                </div>
+              </div>
+              <div class="card__content">
+                <h2>Srinagar Tour Package</h2>
+                <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                <h2>6,950 <small>11,000</small></h2>
+              </div>
+            </div>
+          </div>
+          <a href="#left" class="left main--center"
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+          <a href="#right" class="right main--center"
+            ><i class="fas fa-arrow-right"></i
+          ></a>
         </div>
+      </div>
     </section>
 
-    <section class="places_banner flex--column">
-        <div class="slider__contianer main__container main--center flex--column">
-            <div class="places_slider main--center">
-                <label id="img-1" for="slider-1"><img src="./Assets/images/ktm-banner.jpg" alt=""></label>
-                <label id="img-2" for="slider-2"><img src="./Assets/images/dubai-banner.jpg" alt=""></label>
-                <label id="img-3" for="slider-3"><img src="./Assets/images/discover-dubai-banner.jpg" alt=""></label>
-                <label id="img-4" for="slider-4"><img src="./Assets/images/yas-island-banner.jpg" alt=""></label>
-                <label id="img-5" for="slider-5"><img src="./Assets/images/saudi-banner.jpg" alt=""></label>
+    <section class="destination">
+      <div class="destination__container main__container flex--column">
+        <h1 class="title main--center flex--column">Destinations Near You</h1>
+        <div class="filter__container main--center">
+          <h3 class="filter">Banglore</h3>
+          <h3 class="filter">Mumbai</h3>
+          <h3 class="filter">Delhi</h3>
+          <h3 class="filter">Jaipur</h3>
+          <h3 class="filter">Pune</h3>
+          <h3 class="filter">Chandigarh</h3>
+          <h3 class="filter">Chennai</h3>
+        </div>
+        <div class="destination__grid">
+          <div class="destination__card">
+            <img src="./Assets/images/near-1.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Croog</h2>
+              <h3>Starts at <strong>4,025</strong></h3>
             </div>
+          </div>
+          <div class="destination__card">
+            <img src="./Assets/images/near-2.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Chikmagalur</h2>
+              <h3>Starts at <strong>3,450</strong></h3>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="./Assets/images/near-3.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Wayanad</h2>
+              <h3>Starts at <strong>4,025</strong></h3>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="./Assets/images/near-4.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Pondicherry</h2>
+              <h3>Starts at <strong>7,415</strong></h3>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="./Assets/images/near-5.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Ooty</h2>
+              <h3>Starts at <strong>6,750</strong></h3>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="./Assets/images/near-6.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Munnar</h2>
+              <h3>Starts at <strong>200</strong></h3>
+            </div>
+          </div>
+          <div class="destination__card">
+            <img src="./Assets/images/near-7.jpg" alt="" />
+            <div class="card__content flex--column">
+              <h2>Kabini</h2>
+              <h3>Starts at <strong>500</strong></h3>
+            </div>
+          </div>
+          <div class="destination__card">
+            <a href=""><button>View All</button></a>
+          </div>
         </div>
-        <div class="radio main--center">
-            <a href="#img-1"><input type="radio" name="slider" id="slider-1"></a>
-            <a href="#img-2"><input type="radio" name="slider" id="slider-2"></a>
-            <a href="#img-3"><input type="radio" name="slider" id="slider-3"></a>
-            <a href="#img-4"><input type="radio" name="slider" id="slider-4"></a>
-            <a href="#img-5"><input type="radio" name="slider" id="slider-5"></a>
-        </div>
-
+      </div>
     </section>
 
-    <section></section>
+    <section class="paradise flex--column">
+      <h1 class="title main--center flex--column">Paradise On Earth</h1>
+      <div class="paradise__container main__container main--center">
+        <div class="paradise__card flex--column">
+          <img src="./Assets/images/p-1.jpg" alt="" />
+          <div class="card__title title">India</div>
+          <div class="paradise__card__content flex--column">
+            <a href="">Rajasthan</a>
+            <a href="">North East</a>
+            <a href="">Sikkim</a>
+            <a href="">kerala</a>
+            <a href="">Goa</a>
+            <a href="">Karnataka</a>
+            <a href="">Andaman</a>
+            <a href="">Madhya Pradesh</a>
+          </div>
+        </div>
+        <div class="paradise__card flex--column">
+          <img src="./Assets/images/p-2.jpg" alt="" />
+          <div class="card__title title">India</div>
+          <div class="paradise__card__content flex--column">
+            <a href="">Rajasthan</a>
+            <a href="">North East</a>
+            <a href="">Sikkim</a>
+            <a href="">kerala</a>
+            <a href="">Goa</a>
+            <a href="">Karnataka</a>
+            <a href="">Andaman</a>
+            <a href="">Madhya Pradesh</a>
+          </div>
+        </div>
+        <div class="paradise__card flex--column">
+          <img src="./Assets/images/p-3.jpg" alt="" />
+          <div class="card__title title">India</div>
+          <div class="paradise__card__content flex--column">
+            <a href="">Rajasthan</a>
+            <a href="">North East</a>
+            <a href="">Sikkim</a>
+            <a href="">kerala</a>
+            <a href="">Goa</a>
+            <a href="">Karnataka</a>
+            <a href="">Andaman</a>
+            <a href="">Madhya Pradesh</a>
+          </div>
+        </div>
+        <div class="paradise__card flex--column">
+          <img src="./Assets/images/p-4.jpg" alt="" />
+          <div class="card__title title">India</div>
+          <div class="paradise__card__content flex--column">
+            <a href="">Rajasthan</a>
+            <a href="">North East</a>
+            <a href="">Sikkim</a>
+            <a href="">kerala</a>
+            <a href="">Goa</a>
+            <a href="">Karnataka</a>
+            <a href="">Andaman</a>
+            <a href="">Madhya Pradesh</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="gift">
+      <div class="gift__container main__container main--center">
+        <div class="gift__img">
+          <img src="./Assets/images/giftcard.png" alt="" />
+        </div>
 
+        <div class="gift__content escape__content">
+          <h1>Gift an Experience</h1>
+          <h2>With Thrillophilia Gift Cards</h2>
+          <button class="btn">Know More</button>
+        </div>
+      </div>
+    </section>
 
+    <section class="partners flex--column">
+      <h1 class="title main--center flex--column">Our Partners</h1>
+      <h2>We team up with the best to give you an unmatchable experience</h2>
+      <div class="partners__container main__container">
+        <div class="logo"><img src="./Assets/images/op-1.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-2.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-3.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-4.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-5.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-6.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-7.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-8.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-9.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-10.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-11.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-12.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-13.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-14.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-15.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-16.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-17.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-19.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-20.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-21.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-22.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-23.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-24.png" alt="" /></div>
+        <div class="logo"><img src="./Assets/images/op-26.png" alt="" /></div>
+      </div>
+    </section>
 
-
-
+    <footer class="footer main--center flex--column">
+      <div class="footer__top main__container">
+        <div>
+          <h3>ABOUT THRILLOPHILIA</h3>
+          <p>ABOUT US</p>
+          <p>WE ARE HIRING</p>
+          <p>THRILLOPHILIA REVIEWS</p>
+          <p>TERMS & CONDITIONS</p>
+          <p>PRIVACY POLICIES</p>
+          <p>COPYRIGHT POLICIES</p>
+          <p>SUPPORT</p>
+          <p>APPS</p>
+        </div>
+        <div>
+          <div>
+            <h3>FOR SUPPLIERS</h3>
+            <p>LIST YOUR ACTIVITIES</p>
+          </div>
+          <div>
+            <h3>FOR BRANDS</h3>
+            <p>PARTNER WITH US</p>
+            <p>DESTINATION MARKETING</p>
+          </div>
+          <div>
+            <h3>FOR TRAVEL AGENTS</h3>
+            <p>SIGN UP AS A AGENT</p>
+            <p>AGENT LOGIN</p>
+          </div>
+        </div>
+        <div>
+          <h3>FOR TRAVELLERS</h3>
+          <p>GIFT AN EXPERIENCE</p>
+        </div>
+        <div>
+          <h3>TRAVEL DESTINATIONS</h3>
+          <div>
+            <div class="f_img">
+              <img src="./Assets/images/f-1.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-2.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-3.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-4.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-5.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-6.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-7.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-8.png" alt="" />
+            </div>
+            <div class="f_img">
+              <img src="./Assets/images/f-9.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script>
+      let header = document.getElementById("header");
+      let nav = document.querySelector(".navigation");
+      let logo = document.querySelector(".navigation__logo");
+      let search = document.querySelector(".navigation__search");
+      let icon = document.querySelectorAll(".nav-i");
+      let rightPanel = document.querySelectorAll(".navigation__right_panel a");
 
-        let header = document.getElementById('header');
-        let logo = document.querySelector('.navigation__logo');
-        let search = document.querySelector('.navigation__search');
-        let icon = document.querySelectorAll('.nav-i');
-        let rightPanel = document.querySelectorAll('.navigation__right_panel a');
-
-        window.onscroll = function changeColor(){
-            if (window.pageYOffset>75) {
-                header.style.backgroundColor = "rgba(255, 255, 255, 1)";
-                search.style.backgroundColor = "#e5e5e5";
-                logo.style.backgroundPositionY ="-221px"
-                for (let i= 0; i< icon.length; i++) {
-                    icon[i].style.color = "black";
-                }
-                for (let i= 0; i< rightPanel.length; i++) {
-                    rightPanel[i].style.color = "black";
-                }
-                
-            } else {
-                header.style.backgroundColor = "transparent";
-                search.style.backgroundColor = "transparent";
-                logo.style.backgroundPositionY ="-186px"
-                for (let i= 0; i< icon.length; i++) {
-                    icon[i].style.color = "white";
-                }
-                for (let i= 0; i< rightPanel.length; i++) {
-                    rightPanel[i].style.color = "white";
-                }
-            }
+      window.onscroll = function changeColor() {
+        if (window.pageYOffset > 75) {
+          header.style.backgroundColor = "rgba(255, 255, 255, 1)";
+          header.style.boxShadow = "0 2px 2px gray";
+          nav.style.border = "none";
+          search.style.backgroundColor = "#e5e5e5";
+          logo.style.backgroundPositionY = "-221px";
+          for (let i = 0; i < icon.length; i++) {
+            icon[i].style.color = "black";
+          }
+          for (let i = 0; i < rightPanel.length; i++) {
+            rightPanel[i].style.color = "black";
+          }
+        } else {
+          header.style.backgroundColor = "transparent";
+          header.style.boxShadow = "none";
+          nav.style.borderBottom = "1px solid darkgray";
+          search.style.backgroundColor = "transparent";
+          logo.style.backgroundPositionY = "-186px";
+          for (let i = 0; i < icon.length; i++) {
+            icon[i].style.color = "white";
+          }
+          for (let i = 0; i < rightPanel.length; i++) {
+            rightPanel[i].style.color = "white";
+          }
         }
-
-
+      };
     </script>
-</body>
+  </body>
 </html>

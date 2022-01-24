@@ -117,6 +117,10 @@ header {
   padding-block: 1.5rem;
 }
 
+.nav__mobile {
+  display: none;
+}
+
 .navigation__logo {
   width: 35%;
   height: 3.5rem;

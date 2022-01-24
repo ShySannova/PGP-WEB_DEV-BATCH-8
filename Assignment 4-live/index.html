@@ -13,6 +13,18 @@
   <body>
     <header id="header" class="header main--center">
       <nav class="navigation main__container main--center">
+        <div class="nav__mobile">
+          <i id="menu" class="fa-solid fa-bars"></i>
+          <div id="panel" class="panel">
+            <i id="mclose" class="fa-solid fa-circle-xmark"></i>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Gift an Experience</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="navigation__left_panel main--center">
           <span class="navigation__logo"></span>
           <span class="navigation__search main--center">
@@ -612,6 +624,9 @@
       let search = document.querySelector(".navigation__search");
       let icon = document.querySelectorAll(".nav-i");
       let rightPanel = document.querySelectorAll(".navigation__right_panel a");
+      let menu = document.getElementById("menu");
+      let panel = document.getElementById("panel");
+      let mclose = document.getElementById("mclose");
 
       window.onscroll = function changeColor() {
         if (window.pageYOffset > 75) {
@@ -639,6 +654,16 @@
             rightPanel[i].style.color = "white";
           }
         }
+      };
+
+      menu.onclick = function show() {
+        panel.style.display = "flex";
+        menu.style.display = "none";
+      };
+
+      mclose.onclick = function hide() {
+        panel.style.display = "none";
+        menu.style.display = "flex";
       };
     </script>
   </body>

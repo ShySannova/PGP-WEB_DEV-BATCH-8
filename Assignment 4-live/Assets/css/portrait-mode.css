@@ -83,12 +83,278 @@
 
   .navigation__search {
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .navigation__search > .fas {
+    /* width: 30px; */
+    /* aspect-ratio: 1; */
+    font-size: 2rem;
   }
 
   input[type="search"] {
-    width: 0;
+    display: none;
   }
   .navigation__right_panel {
+    display: none;
+  }
+
+  .banner__container > h1 {
+    font-size: 3.5rem;
+  }
+
+  .banner {
+    height: 90vh;
+  }
+  .banner__img {
+    background-image: url("../images/banner.jpg");
+    /* background-position: -33px 0px; */
+  }
+
+  .sliderContainer {
+    height: 6rem;
+  }
+
+  .slider {
+    animation-duration: 15s;
+  }
+
+  .slider__topic {
+    height: 6rem;
+    font-size: 4.4rem;
+    line-height: 6rem;
+  }
+
+  @keyframes verticalSlider {
+    12.5% {
+      margin-top: -6rem;
+    }
+    25% {
+      margin-top: -6rem;
+    }
+    37.5% {
+      margin-top: -12rem;
+    }
+    50% {
+      margin-top: -12rem;
+    }
+    62.5% {
+      margin-top: -18rem;
+    }
+    75% {
+      margin-top: -18rem;
+    }
+    87.5% {
+      margin-top: -24rem;
+    }
+    100% {
+      margin-top: -24rem;
+    }
+  }
+
+  .tags {
+    display: none;
+  }
+
+  .banner__search {
+    width: 120%;
+    height: 4rem;
+  }
+  .banner__search > input {
+    font-size: 1.4rem;
+  }
+
+  .banner__search > .fas {
+    font-size: 1.7rem;
+  }
+
+  .statsContainer {
+    flex-wrap: wrap;
+    color: #acacac;
+  }
+
+  .fab {
+    font-size: 3.6rem;
+  }
+
+  .stats__item {
+    cursor: pointer;
+  }
+
+  .stats__item:hover {
+    color: white;
+  }
+
+  .stats__content {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .escape__container {
+    padding-block: 5rem;
+    flex-wrap: wrap;
+  }
+
+  .escape__content {
+    text-align: center;
+  }
+
+  .escape__content > h1 {
+    font-size: 3rem;
+    line-height: 1.33;
+  }
+
+  .escape__content > hr {
+    right: 0;
+  }
+  .escape__images a img {
+    height: 17rem;
+  }
+
+  .ad {
+    padding-block: 1rem;
+  }
+
+  .ad__container {
+    flex-wrap: wrap;
+  }
+
+  .ad__discount {
+    width: 100%;
+    aspect-ratio: 1/1.2;
+  }
+
+  .ad__content > div:first-child {
+    font-size: 2rem;
+  }
+
+  .discount__value > div:first-child {
+    font-size: 12rem;
+  }
+
+  .discount__right_value > div {
+    font-size: 5rem;
+  }
+
+  .discount__right_value > div:last-child {
+    font-size: 2.5rem;
+  }
+
+  .ad__content > div:nth-child(3) {
+    font-size: 1.4rem;
+  }
+
+  .ad__content .book_btn {
+    font-size: 1.4rem;
+  }
+
+  .ad__places {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .ad__places > div {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .places_slider {
+    height: 200px;
+  }
+
+  .places_slider > div {
+    height: 200px;
+  }
+  .places_slider img {
+    height: 200px;
+  }
+
+  .title {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+
+  .cards__slider {
+    width: 400%;
+  }
+
+  .left,
+  .right {
+    width: 40px;
+    height: 40px;
+  }
+
+  .filter__container {
+    flex-wrap: wrap;
+  }
+
+  .destination__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+  }
+
+  .destination__card button {
+    padding: 0rem 0rem;
+    height: 5rem;
+    width: 13rem;
+    font-size: 1.2rem;
+  }
+
+  .card__content > h2 {
+    font-size: 1.2rem;
+  }
+
+  .paradise__container {
+    flex-wrap: wrap;
+  }
+
+  .card__title::after {
+    width: 280px;
+  }
+
+  .gift__container {
+    flex-wrap: wrap;
+  }
+
+  .gift__img {
+    width: 100%;
+  }
+  .gift__content {
+    width: 100%;
+  }
+
+  .partners > h2 {
+    text-align: center;
+  }
+
+  .partners__container {
+    padding-block: 5rem;
+    padding-bottom: 15rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  footer {
+    height: 200vh;
+  }
+
+  .footer__top {
+    flex-wrap: wrap;
+  }
+
+  .footer__top > div:last-child div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+  }
+
+  .bot_link::before,
+  .bot_link::after {
+    display: none;
+  }
+
+  footer .footer__top .f_img:nth-last-child(9) {
     display: none;
   }
 }

@@ -661,12 +661,14 @@
       };
 
       menu.onclick = function show() {
-        panel.style.display = "flex";
+        // panel.style.display = "flex";
+        panel.style.left = "0";
         menu.style.display = "none";
       };
 
       mclose.onclick = function hide() {
-        panel.style.display = "none";
+        // panel.style.display = "none";
+        panel.style.left = "-100%";
         menu.style.display = "flex";
       };
     </script>

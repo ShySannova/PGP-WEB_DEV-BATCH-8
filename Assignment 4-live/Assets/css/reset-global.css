@@ -114,7 +114,7 @@ header {
 .navigation {
   font-size: 1.2rem;
   border-bottom: 1px solid darkgray;
-  padding-block: 1.5rem;
+  /* padding-block: 1.5rem; */
 }
 
 .nav__mobile {
@@ -126,16 +126,18 @@ header {
   height: 3.5rem;
   background-image: url("../images/logo.png");
   background-position: 0 -186px;
+  background-repeat: no-repeat;
 }
 
 .navigation__left_panel {
   width: 52%;
+  padding-block: 1.5rem;
 }
 
 .navigation__search {
   width: 70%;
   height: 3.5rem;
-  padding-block: 1rem;
+  /* padding-block: 1rem; */
   border-radius: 5vw;
   /* background-color: lightgray; */
 }
@@ -164,12 +166,15 @@ input[type="search"]::placeholder {
   width: 22%;
   justify-content: space-between;
   padding-right: 1.5rem;
+  padding-block: 1.5rem;
 }
 
 .navigation__right_panel > li > a {
   /* font-size: 1.3rem; */
   color: white;
-  padding-bottom: 2.8rem;
+  height: 3.5rem;
+  padding-block: 1.5rem;
+  /* padding-bottom: 2.8rem; */
 }
 
 .navigation__right_panel > li > a:hover {
@@ -846,8 +851,8 @@ input[type="search"]::placeholder {
 
 .left,
 .right {
-  width: 80px;
-  height: 80px;
+  width: 8rem;
+  height: 8rem;
   background-color: white;
   border-radius: 50%;
   position: absolute;
@@ -888,8 +893,8 @@ input[type="search"]::placeholder {
   padding-block: 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  row-gap: 40px;
+  column-gap: 2rem;
+  row-gap: 4rem;
 }
 .destination__card {
   display: flex;
@@ -905,7 +910,7 @@ input[type="search"]::placeholder {
   transform: translateY(-8px);
 }
 .destination__card > img {
-  width: 60px;
+  width: 6rem;
   aspect-ratio: 1;
   border-radius: 10px;
 }
@@ -1025,7 +1030,7 @@ input[type="search"]::placeholder {
 }
 
 .partners {
-  padding-bottom: 10rem;
+  padding-bottom: 100px;
 }
 
 .partners > h2 {
@@ -1113,7 +1118,7 @@ footer {
 }
 
 .footer__top > div:last-child .f_img {
-  width: 80px;
+  width: 8rem;
   aspect-ratio: 1;
   /* background-color: red; */
   display: flex;
@@ -1144,10 +1149,10 @@ footer {
   width: 36%;
 }
 .bot_link::before {
-  left: 4%;
+  right: 4%;
 }
 .bot_link::after {
-  right: 4%;
+  left: 4%;
 }
 
 .bottom_logo {

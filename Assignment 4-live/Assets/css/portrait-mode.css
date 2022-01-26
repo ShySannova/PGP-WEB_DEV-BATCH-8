@@ -23,19 +23,22 @@
   }
 
   .panel {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     bottom: 0;
     width: 80%;
+    height: 100vh;
     background-color: rgba(34, 32, 32, 0.884);
+    transition: 0.4s ease-in-out;
   }
 
   .panel > i {
     position: absolute;
     top: 1%;
     right: -13%;
+    color: #fff;
     width: 30px;
     aspect-ratio: 1;
     font-size: 2.5rem;
@@ -78,7 +81,9 @@
   }
 
   .navigation__logo {
-    width: 70%;
+    width: 50%;
+    height: 4.5rem;
+    margin-inline: auto;
   }
 
   .navigation__search {
@@ -87,6 +92,7 @@
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    /* margin-left: auto; */
   }
 
   .navigation__search > .fas {
@@ -95,11 +101,15 @@
     font-size: 2rem;
   }
 
-  input[type="search"] {
+  .navigation__search > input[type="search"] {
     display: none;
   }
   .navigation__right_panel {
     display: none;
+  }
+
+  .banner__container {
+    align-self: center;
   }
 
   .banner__container > h1 {
@@ -160,7 +170,7 @@
   }
 
   .banner__search {
-    width: 120%;
+    /* width: 120%; */
     height: 4rem;
   }
   .banner__search > input {
@@ -182,6 +192,8 @@
 
   .stats__item {
     cursor: pointer;
+    /* width: 32%; */
+    justify-content: flex-start;
   }
 
   .stats__item:hover {
@@ -195,7 +207,7 @@
 
   .escape__container {
     padding-block: 5rem;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .escape__content {
@@ -220,6 +232,7 @@
 
   .ad__container {
     flex-wrap: wrap;
+    gap: 3rem;
   }
 
   .ad__discount {
@@ -260,20 +273,23 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  .places_slider {
-    height: 200px;
-  }
-
-  .places_slider > div {
-    height: 200px;
-  }
+  .places_slider,
+  .places_slider > div,
   .places_slider img {
-    height: 200px;
+    height: 160px;
   }
 
   .title {
     font-size: 2.3rem;
     text-align: center;
+  }
+
+  .cards__container {
+    overflow-x: scroll;
+  }
+
+  .card {
+    padding-bottom: 10px;
   }
 
   .cards__slider {
@@ -286,6 +302,10 @@
     height: 40px;
   }
 
+  .destination {
+    padding-bottom: 0rem;
+  }
+
   .filter__container {
     flex-wrap: wrap;
   }
@@ -293,7 +313,7 @@
   .destination__grid {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 0px;
-    row-gap: 0px;
+    row-gap: 10px;
   }
 
   .destination__card button {
@@ -304,7 +324,7 @@
   }
 
   .card__content > h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .paradise__container {
@@ -312,7 +332,7 @@
   }
 
   .card__title::after {
-    width: 280px;
+    width: 100%;
   }
 
   .gift__container {
@@ -337,11 +357,13 @@
   }
 
   footer {
-    height: 200vh;
+    height: 150vh;
   }
 
   .footer__top {
     flex-wrap: wrap;
+    top: -10%;
+    text-align: center;
   }
 
   .footer__top > div:last-child div {
@@ -354,7 +376,7 @@
     display: none;
   }
 
-  footer .footer__top .f_img:nth-last-child(9) {
+  .footer__top > div .f_img:nth-child(odd) {
     display: none;
   }
 }

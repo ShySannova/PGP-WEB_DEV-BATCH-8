@@ -222,10 +222,10 @@
       <div class="kashmir__container main__container main--center flex--column">
         <h1 class="title main--center flex--column">Best Of Kashmir</h1>
         <div class="cards__container">
-          <div class="cards__slider main--center">
+          <div id="cards_slider" class="cards__slider main--center">
             <div class="card">
               <div class="card__img">
-                <img id="left" src="./Assets/images/k-1.jpg" alt="" />
+                <img src="./Assets/images/k-1.jpg" alt="" />
                 <div class="gps">
                   <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
                 </div>
@@ -233,7 +233,7 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
             <div class="card">
@@ -246,7 +246,7 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
 
@@ -260,7 +260,7 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
             <div class="card">
@@ -273,7 +273,7 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
             <div class="card">
@@ -286,7 +286,7 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
             <div class="card">
@@ -299,7 +299,7 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
             <div class="card">
@@ -312,12 +312,12 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
             <div class="card">
               <div class="card__img">
-                <img id="right" src="./Assets/images/k-8.jpeg" alt="" />
+                <img src="./Assets/images/k-8.jpeg" alt="" />
                 <div class="gps">
                   <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
                 </div>
@@ -325,16 +325,16 @@
               <div class="card__content">
                 <h2>Srinagar Tour Package</h2>
                 <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
-                <h2>6,950 <small>11,000</small></h2>
+                <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
               </div>
             </div>
           </div>
-          <a href="#left" class="left main--center"
-            ><i class="fas fa-arrow-left"></i
-          ></a>
-          <a href="#right" class="right main--center"
-            ><i class="fas fa-arrow-right"></i
-          ></a>
+          <div class="left main--center" onclick="moveLeft()">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+          <div class="right main--center" onclick="moveRight()">
+            <i class="fas fa-arrow-right"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -671,6 +671,16 @@
         panel.style.left = "-100%";
         menu.style.display = "flex";
       };
+
+      // move left slider
+      function moveLeft() {
+        let cardSliderL = document.getElementById("cards_slider");
+        cardSliderL.style.marginLeft = "-90%";
+      }
+      function moveRight() {
+        let cardSliderR = document.getElementById("cards_slider");
+        cardSliderR.style.marginLeft = "0";
+      }
     </script>
   </body>
 </html>

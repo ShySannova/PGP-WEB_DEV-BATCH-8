@@ -1,4 +1,4 @@
-@media (max-width: 1023px) and (orientation: landscape) {
+@media (max-width: 1310px) and (orientation: landscape) {
   html {
     font-size: 26%;
   }
@@ -35,11 +35,11 @@
     align-self: center;
   }
 
-  .places_slider,
+  /* .places_slider,
   .places_slider > div,
   .places_slider img {
     height: 180px;
-  }
+  } */
 
   .bot_link::before,
   .bot_link::after {

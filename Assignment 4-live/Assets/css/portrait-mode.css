@@ -336,7 +336,7 @@
   }
 
   .gift__container {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .gift__img {
@@ -351,19 +351,16 @@
   }
 
   .partners__container {
-    padding-block: 5rem;
-    padding-bottom: 15rem;
+    /* padding-block: 5rem;
+    padding-bottom: 15rem; */
     grid-template-columns: repeat(3, 1fr);
   }
 
-  footer {
-    height: 150vh;
-  }
-
   .footer__top {
-    flex-wrap: wrap;
-    top: -10%;
+    flex-direction: column;
+    /* top: -10%; */
     text-align: center;
+    margin-top: -20%;
   }
 
   .footer__top > div:last-child div {

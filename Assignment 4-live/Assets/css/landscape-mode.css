@@ -45,8 +45,4 @@
   .bot_link::after {
     width: 25%;
   }
-
-  footer {
-    height: 150vh;
-  }
 }

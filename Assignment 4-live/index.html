@@ -221,8 +221,8 @@
     <section class="kashmir">
       <div class="kashmir__container main__container main--center flex--column">
         <h1 class="title main--center flex--column">Best Of Kashmir</h1>
-        <div class="cards__container">
-          <div id="cards_slider" class="cards__slider main--center">
+        <div id="slider_scroll" class="cards__container">
+          <div class="cards__slider main--center">
             <div class="card">
               <div class="card__img">
                 <img src="./Assets/images/k-1.jpg" alt="" />
@@ -672,14 +672,13 @@
         menu.style.display = "flex";
       };
 
-      // move left slider
+      // scroll slider
+      let cardScroll = document.getElementById("slider_scroll");
       function moveLeft() {
-        let cardSliderL = document.getElementById("cards_slider");
-        cardSliderL.style.marginLeft = "-90%";
+        cardScroll.scrollLeft += 200;
       }
       function moveRight() {
-        let cardSliderR = document.getElementById("cards_slider");
-        cardSliderR.style.marginLeft = "0";
+        cardScroll.scrollLeft -= 200;
       }
     </script>
   </body>

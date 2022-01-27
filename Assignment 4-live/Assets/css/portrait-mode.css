@@ -273,11 +273,11 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  .places_slider,
+  /* .places_slider,
   .places_slider > div,
   .places_slider img {
     height: 160px;
-  }
+  } */
 
   .title {
     font-size: 2.3rem;

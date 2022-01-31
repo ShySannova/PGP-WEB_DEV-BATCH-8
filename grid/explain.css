@@ -1,0 +1,74 @@
+@font-face {
+    font-family: black-ops;
+    src: url(./BlackOpsOne-Regular.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  color: black;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --ff-black-Ops: black-ops;
+  --clr-primary: purple;
+  --clr-secondary: rgba(0, 0, 0, 0.808);
+  --clr-regular: rgb(245, 245, 245);
+  --f-lvl-1: 4rem;
+  --f-lvl-2: 2.5rem;
+  --f-lvl-3: 1.3rem;
+}
+
+img{
+    width: 100%;
+}
+
+.main-grid{
+    display: grid;
+    background-color: red;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+header{
+    background-color: yellow;
+    grid-column: 1 / -1;
+}
+
+.banner{
+    background-color: green;
+    grid-column: 1 / -1;
+    grid-row: span 2;
+}
+aside{
+    background-color: var(--clr-primary);
+    grid-column: span 2;
+    grid-row: span 2;
+}
+article{
+    background-color: gray;
+    grid-column: 3 / span 2;
+
+}
+article:nth-of-type(2){
+    background-color: black;
+    grid-column: 3 / span 2;
+    grid-row: span 2;
+}
+
+footer{
+    background-color: blue;
+    grid-column: 1 / span 2;
+}

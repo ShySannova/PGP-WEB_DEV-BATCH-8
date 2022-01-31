@@ -11,8 +11,13 @@
         <div class="main-grid">
             <header class="header">
                 <nav>
-                    <div class="logo">GRID</div>
-                    <ul class="nav_items">
+                    <div class="logo">
+                        <a href="./index.html">MyTube</a>
+                        <div id="menu" class="conta" onclick="cls();">
+                            <div class="menu"></div>
+                        </div>
+                    </div>
+                    <ul id="nav_items" class="nav_items" style="display: none;"> 
                         <li><a href="">Home</a></li>
                         <li><a href="">Article</a></li>
                         <li><a href="">contact</a></li>
@@ -44,5 +49,34 @@
             </article>
             <footer>6</footer>
         </div>
+
+
+
+
+
+
+
+        <script>
+
+            // fetching id
+                let menu = document.getElementById('menu').style.display;
+                
+                
+
+            // function create
+                function cls(){
+                    let nav = document.getElementById('nav_items').style.display;
+                    
+                    if ((nav) === (nav ="none")) {
+                        document.getElementById('nav_items').style.display = 'grid';
+                        console.log('block')
+                    }
+                    else {
+                        document.getElementById('nav_items').style.display = 'none';
+                        console.log('none')
+                    }
+                }
+
+        </script>
   </body>
 </html>

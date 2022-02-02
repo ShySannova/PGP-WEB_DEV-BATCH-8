@@ -109,6 +109,7 @@ img{
 
 
 .nav_items{
+  display: none;
   background-color: var(--clr-secondary);
   /* gap: .5rem; */
   grid-template-columns: repeat(1,1fr);

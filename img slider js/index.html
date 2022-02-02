@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Icon-Pack/css/all.css">
+    <title>slider</title>
+    <style>
+        html {
+          font-size: 62.5%;
+        }
+        section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-block: 2rem;
+        }
+
+        .main__container {
+          width: 80%;
+          display: flex;
+        }
+
+        .flex--column {
+          flex-direction: column;
+        }
+
+        .main--center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1rem;
+        }
+        .kashmir__container {
+          position: relative;
+        }
+
+        .title {
+          font-size: 3rem;
+          font-weight: 600;
+          line-height: 1.24;
+        }
+
+        .title::after {
+          width: 60px;
+          height: 2px;
+          background-color: #ff5100;
+          content: "";
+          display: block;
+          margin-block: 8px 16px;
+        }
+
+        .cards__container {
+          width: 100%;
+          /* background-color:yellow; */
+          overflow: scroll;
+          scroll-behavior: smooth;
+        }
+
+        .cards__slider {
+          width: 180%;
+          justify-content: space-between;
+          /* background-color: red; */
+          margin-left: -87%;
+        }
+
+        .card {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .card__img {
+          border-radius: 15px;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          justify-content: center;
+        }
+
+        .gps {
+          width: 80%;
+          position: absolute;
+          word-spacing: 1px;
+          bottom: 15px;
+          color: white;
+          text-align: left;
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+
+        .fa-star {
+          color: yellow;
+        }
+        .card__content > h3:first-of-type {
+          color: gray;
+        }
+        .card__content > h2:last-child {
+          color: #5f5a5a;
+        }
+        .card__content > h2 > small {
+          text-decoration: line-through;
+          color: gray;
+        }
+
+        .left,
+        .right {
+          width: 8rem;
+          height: 8rem;
+          background-color: white;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 4;
+          top: 50%;
+          box-shadow: 0 0 10px gray;
+          color: #ff5300;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+        .left {
+          left: 0;
+          transform: translateX(-50%);
+        }
+        .right {
+          right: 0;
+          transform: translateX(50%);
+        }
+
+        .left:hover,
+        .right:hover {
+          background-color: #f7eeee;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="kashmir">
+        <div class="kashmir__container main__container main--center flex--column">
+          <h1 class="title main--center flex--column">Best Of Kashmir</h1>
+          <div class="cards__container">
+            <div id="slider_scroll" class="cards__slider main--center">
+
+              <!-- //////// -->
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-5.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-6.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-7.jpg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-8.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+
+
+
+              <!-- /////// -->
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-1.jpg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-2.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+  
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-3.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-4.jpg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-5.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-6.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-7.jpg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-8.jpeg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+
+
+              <!-- \\\\\\\\\ -->
+
+
+              <div class="card">
+                <div class="card__img">
+                  <img src="./k-1.jpg" alt="" />
+                  <div class="gps">
+                    <i class="fas fa-map-marker-alt"></i> Srinagar | 3D/2N
+                  </div>
+                </div>
+                <div class="card__content">
+                  <h2>Srinagar Tour Package</h2>
+                  <h3><i class="fas fa-star"></i> 4.0 (171 Reviews)</h3>
+                  <h2>&#8377; 6,950 <small>&#8377; 11,000</small></h2>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- /////////// -->
+
+
+            <div class="left main--center" onclick="moveLeft()">
+              <i class="fas fa-arrow-left"></i>
+            </div>
+            <div class="right main--center" onclick="moveRight()">
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <script>
+
+        // scroll slider
+      let cardScroll = document.getElementById("slider_scroll");
+      let ls = -87 ;
+      let scount = 0;
+      function moveRight() {
+        ls = ls -87;
+        if(scount<=1){
+          console.log(scount, ls)
+          cardScroll.style.transition = ".4s linear";
+          cardScroll.style.marginLeft = ls + "%";
+
+          if(scount===0){
+            setTimeout(() => {
+              cardScroll.style.transition = "none";
+              cardScroll.style.marginLeft = 0 + "%";
+              scount=1;
+              ls= 0;
+            }, 500);            
+          }
+          scount=0;
+        }
+  
+      }
+      function moveLeft() {
+        ls = ls + 87;
+        if(scount>=-1){
+          console.log(scount, ls)
+          cardScroll.style.transition = ".4s linear";
+          cardScroll.style.marginLeft = ls + "%";
+
+          if(scount===0){
+            setTimeout(() => {
+              cardScroll.style.transition = "none";
+              cardScroll.style.marginLeft = -174 + "%";
+              scount=-1;
+              ls=-174;
+            }, 500);            
+          }
+          scount=0;
+          
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+
+
+
+    
+</body>
+</html>

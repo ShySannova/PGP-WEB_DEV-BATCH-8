@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Movies-Info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+     <div id="overlay-view" class="overlay">
+        <div class="modal view_modal">
+            <div class="view_wrapper">
+                <div class="img_container">
+                <img id="image" src="https://cdn.myanimelist.net/images/anime/1948/120625.jpg" alt=""/>
+                </div>
+                    
+                <div class="info">
+                    <div class="title">
+                        <h1 id="movie_name">Attack on titan</h1>
+                    </div>
+                    <div class="Imdbrating">
+                        <h3>IMDB-Rating</h3>
+                        <p id="rating">99</p>
+                    </div>
+                    <div class="year">
+                        <h3>Year</h3>
+                        <p id="year">99</p>
+                    </div>
+                    <div class="duration">
+                        <h3>Duration</h3>
+                        <p id="duration">256</p>
+                    </div>
+                    <div class="genres">
+                        <h3>Genres</h3>
+                        <p id="genres">Lorem</p>
+                    </div>
+                    <div class="actors">
+                        <h3>Actors</h3>
+                        <p id="actors">Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="story">
+                        <h3>Story-Line</h3>
+                        <p id="story">
+                            "It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the mysterious organization of elite rogue ninja, is closing in on their grand plan which may threaten the safety of the entire shinobi world.",
+                        </p>
+                    </div>
+                </div>   
+            </div>
+            <div class="xclose" onclick="xClose('overlay-view')">
+                <span></span>
+                <span></span>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <dialog class="rate_modal" id="rate_modal">
+        <div class="rating_wrapper">
+            <div class="container">
+                <i class="fa-solid fa-star" data-val="1" onclick="onClick(event)" onmouseover="onClick(event)"></i>
+                <i class="fa-solid fa-star" data-val="2" onclick="onClick(event)" onmouseover="onClick(event)"></i>
+                <i class="fa-solid fa-star" data-val="3" onclick="onClick(event)" onmouseover="onClick(event)"></i>
+                <i class="fa-solid fa-star" data-val="4" onclick="onClick(event)" onmouseover="onClick(event)"></i>
+                <i class="fa-solid fa-star" data-val="5" onclick="onClick(event)" onmouseover="onClick(event)"></i>
+            </div>
+            <button class="btn submit_btn" disabled onclick="submit()">Submit</button>
+        </div>
+        <div class="xclose" onclick="rateModalClose()">
+            <span></span>
+            <span></span>
+        </div>
+    </dialog>
+
+    <div class="wrapper">
+        <div class="header">
+            <h1>Movies Buzz</h1>
+        </div>
+        <section class="all_movies">
+            <!-- <div class="card">
+                <div class="img_container">
+                    <img src="" alt="">
+                </div>
+                <div class="content">
+                    <h2>title</h2>
+                    <div class="info_container">
+                        <div class="rate_us">
+                            <button class="rate_btn">Rate Us Now</button>
+                        </div>
+                        <div class="star_display">
+                            <div class="rating">
+                                <div class="rating_container">
+                                    <span class="i_container">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                    </span>
+                                    <span class=" i_container y_container">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div> 
+                                    
+                                <h3>Rating</h3>
+                            </div>
+                            <div class="btn_container">
+                                <button class="btn">Details</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> -->
+            
+        </section>
+
+
+        <footer class="footer">
+    
+        </footer>
+    </div>
+    
+    <script src="./js/user.js"></script>
+</body>
+</html>

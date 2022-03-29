@@ -56,24 +56,27 @@
 
 
 
-        <script>
+        <script >
 
             // fetching id
                 let menu = document.getElementById('menu').style.display;
                 
-                
+                let display = "none";
 
             // function create
                 function cls(){
                     let nav = document.getElementById('nav_items').style.display;
-                    
-                    if ((nav) === (nav ="none")) {
+                    // console.log(nav)
+
+                    if (display === "none") {
                         document.getElementById('nav_items').style.display = 'grid';
-                        console.log('grid')
+                        // console.log('block')
+                        display = "grid";
                     }
                     else {
                         document.getElementById('nav_items').style.display = 'none';
-                        console.log('none')
+                        // console.log('none')
+                        display ="none"
                     }
                 }
 

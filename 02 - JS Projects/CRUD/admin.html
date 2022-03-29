@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>movies crud</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/admin-style.css">
+</head>
+<body>
+    <div id="overlay-view" class="overlay">
+        <div class="modal view_modal">
+            <div class="view_wrapper">
+                <div class="img_container">
+                <img id="image" src="https://cdn.myanimelist.net/images/anime/1948/120625.jpg" alt=""/>
+                </div>
+                    
+                <div class="info">
+                    <div class="title">
+                        <h1 id="movie_name">Attack on titan</h1>
+                    </div>
+                    <div class="rating">
+                        <h3>IMDB-Rating</h3>
+                        <p id="rating">99</p>
+                    </div>
+                    <div class="year">
+                        <h3>Year</h3>
+                        <p id="year">99</p>
+                    </div>
+                    <div class="duration">
+                        <h3>Duration</h3>
+                        <p id="duration">256</p>
+                    </div>
+                    <div class="genres">
+                        <h3>Genres</h3>
+                        <p id="genres">Lorem</p>
+                    </div>
+                    <div class="actors">
+                        <h3>Actors</h3>
+                        <p id="actors">Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="story">
+                        <h3>Story-Line</h3>
+                        <p id="story">
+                            "It has been two and a half years since Naruto Uzumaki left Konohagakure, the Hidden Leaf Village, for intense training following events which fueled his desire to be stronger. Now Akatsuki, the mysterious organization of elite rogue ninja, is closing in on their grand plan which may threaten the safety of the entire shinobi world.",
+                        </p>
+                    </div>
+                </div>   
+            </div>
+            <div class="xclose" onclick="xClose('overlay-view')">
+                <span></span>
+                <span></span>
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-add">
+        <div class="modal add_modal">
+            <div class="xclose" onclick="xClose('overlay-add')">
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Add Movies</h1>
+            <form id="create" class="input_container">
+                <input type="text" id="add_title" placeholder="Add Title" />
+                <input type="text" id="add_year" placeholder="Add dd-mm-yyyy">
+                <input type="text" id="add_duration" placeholder="Add Duration">
+                <input type="text" id="add_genres" placeholder="Add Genres e.g: abc, zyz ">
+                <input type="text" id="add_imdb" placeholder="Add IMDB Rating">
+                <input type="text" id="add_actors" placeholder="Add Actors e.g: abc, zyz">
+                <input type="url" id="add_image" placeholder="Add Image Url">
+            </form>
+            
+            <textarea rows="10" id="add_story" placeholder="Add Story-Line"></textarea>
+
+            <button class="btn add-btn" onclick="saveUpdate()">Save & Update</button>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay-edit">
+        <div class="modal add_modal">
+            <div class="xclose" onclick="xClose('overlay-edit')">
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Edit Movies</h1>
+            <form id="edit" class="input_container">
+                <input type="text" id="edit_title" placeholder="Edit Title" />
+                <input type="text" id="edit_year" placeholder="Edit dd-mm-yyyy">
+                <input type="text" id="edit_duration" placeholder="Edit Duration">
+                <input type="text" id="edit_genres" placeholder="Edit Genres e.g: abc, zyz ">
+                <input type="text" id="edit_imdb" placeholder="Edit IMDB Rating">
+                <input type="text" id="edit_actors" placeholder="Edit Actors e.g: abc, zyz">
+                <input type="url" id="edit_image" placeholder="Edit Image Url">
+            </form>
+            <textarea rows="10" id="edit_story" placeholder="Edit Story-Line"></textarea>
+            <span>
+                <label for="blocked"><b>BLOCKED</b></label>
+                <input type="checkbox" id="blocked">
+            </span>
+            
+            
+            <button class="btn edit-btn" onclick="saveEdited()">Save & Update</button>
+        </div>
+    </div>
+
+    
+
+    <div class="wrapper">
+        <header class="header">
+            <h1>Movies</h1>
+            <div class="buttons">
+                <button class="btn add-btn" onclick="dummyData()">Add Dummy Data</button>
+                <button class="btn add-btn" onclick="addMovieModal()">Add Movies</button>
+            </div>
+        </header>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>name</th>
+                    <th>release date</th>
+                    <th>duration</th>
+                    <th>genres</th>
+                    <th>imdb rating</th>
+                    <th>actions</th>
+                </tr>
+                <tr><th></th></tr>
+            </thead>
+            <tbody class="tbody">
+
+            </tbody>
+        </table>
+        <footer class="footer">
+            <div class="top_content">
+                <form class="go_to">
+                    <h3>Go to Page:</h3>
+                    <input type="number" onkeyup="link(this.value)">
+                </form>
+                <div class="total-pages">
+                    <h3>Total Pages:</h3>
+                    <strong></strong>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <button class="btn page-btn" onclick="prev()">
+                    <i class="fa-solid fa-angles-left"></i>
+                    <h3>prev</h3>
+                </button>
+                <div class="page-number-link">
+                
+                </div>
+                <button class="btn page-btn" onclick="next()">
+                    <h3>next</h3>
+                    <i class="fa-solid fa-angles-right"></i>
+                </button>
+            </div>
+
+        </footer>  
+    </div>
+    
+
+    <div class="toast">
+        <span>some msg</span>
+    </div>
+
+
+
+    <script src="./js/admin.js"></script>
+</body>
+</html>

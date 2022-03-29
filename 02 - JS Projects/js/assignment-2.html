@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+
+    //creating array of 5 object
+
+
+    var students=[
+        {
+            name : "prakar",
+            age : 23,
+            batch: 8,
+            planet: "earth"
+        },
+        {
+            name : "sai",
+            age : 21,
+            batch: 10,
+            planet: "pluto"
+        },
+        {
+            name : "imaz",
+            age : 24,
+            batch: 7,
+            planet: "mars"
+        },
+        {
+            name : "saurabh",
+            age : 25,
+            batch: 1,
+            planet: "venus"
+        },
+        {
+            name : "atanda",
+            age : 17,
+            batch: 5,
+            planet: "saturn"
+        }
+    ]
+
+    // looping using for loop
+        for (let i = 0; i < students.length; i++) {
+            console.log(students[i].name,students[i].planet)  
+        }
+
+    // looping uisng forEach loop
+        students.forEach(function (student, i) {
+            console.log(student.age,student.batch)
+            // console.log(student)
+        });
+
+        // students.forEach((student,i) => {
+        //     console.log(student.age,student.batch);
+        // });
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

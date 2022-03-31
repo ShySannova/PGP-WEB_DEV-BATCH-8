@@ -60,6 +60,7 @@ img{
     aspect-ratio: 1 / 1;
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .indicators>li.active{

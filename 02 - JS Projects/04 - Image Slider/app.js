@@ -151,5 +151,23 @@ function next() {
 
 };
 
+//indicators click event
+indicators.forEach((indicator,index)=>{
+    indicator.addEventListener('click', ()=>{
+        indicators.forEach((indi)=>{
+            indi.classList.remove('active');
+        });
+        if (control===1) {
+            resetSliderNext();
+        }else{
+            resetSliderPrev();
+        }
+        slideLeft= margin*(index+1);
+        count = (index+1);
+        slider.style.marginLeft = slideLeft + 'vw';
+        indicator.classList.add('active');
+    })
+})
+
 
 console.timeEnd();

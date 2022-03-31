@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(137deg, rgb(125, 216, 216) ,rgb(8, 8, 216));
+}
+
+
+.container{
+    width: 30vw;
+    height: 80vh;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30vw;
+    margin-left: -30vw;
+}
+
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.indicators{
+    width: 30vw;
+    height: 5vh;
+    /* background-color: yellow; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.indicators>li{
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.indicators>li.active{
+    background-color: red;
+}
+
+.buttons{
+    width: 36vw;
+    height: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    width: 14%;
+    aspect-ratio: 1 / 1;
+    /*border-radius: 50%;
+    */border: 2px solid rgb(9, 4, 24);
+    background-color: rgb(9, 4, 24);
+    color: white;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    box-shadow: 0 0 8px black;
+    position: relative;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(45deg, rgba(214, 13, 13, 0.884) ,rgba(24, 24, 224, 0.932));
+    /* background-color: rgb(28, 13, 73); */
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);
+    z-index: -1;
+}
+
+.btn:disabled{
+    background-color: darkslategray;
+    border-color: darkslategray;
+    box-shadow: none;
+    color: lightgray;
+    cursor: no-drop;
+}
+

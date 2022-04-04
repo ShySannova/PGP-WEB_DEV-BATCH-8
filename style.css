@@ -31,11 +31,12 @@ body>.container{
 
 .container>a{
     width: 30%;
-    height: 80vh;
+    aspect-ratio: 1 / .65;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
+    background-position: top center;
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 0px 0px 10px white;
@@ -46,15 +47,22 @@ body>.container{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease-in-out;
+}
+.container>a>div>h1{
     text-align: center;
     font-size: 40px;
     color: white;
-    line-height: 100vh;
     transition: .4s ease-in-out;
 }
 
 .container>a>div:hover{
     background-color: transparent;
+}
+.container>a>div:hover h1{
     font-size: 0;
 }
 
@@ -68,6 +76,32 @@ body>.container{
 
 .container>a:nth-child(3){
     background-image: url('./Assets/media/Assignment\ -3\ \(Fashion-Site\)\ -\ .jpg');
+}
+
+.container>a:nth-child(4){
+    background-image: url('./Assets/media/Assignment\ -4\ \(Thrillophilia\ Clone\)\ -\ .jpg');
+}
+
+.container>a:nth-child(5){
+    background-image: url('./Assets/media/Assignment\ -5\ \(Calendar\)\ -\ .jpg');
+}
+
+.container>a:nth-child(6){
+    background-image: url('./Assets/media/Assignment\ -6\ \(Filters\)\ -\ .jpg');
+}
+
+.container>a:nth-child(7){
+    background-image: url('./Assets/media/Assignment\ -7\ \(User\ View\)\ -\ .jpg');
+}
+
+.container>a:nth-child(8){
+    background-image: url('./Assets/media/Assignment\ -7.1\ \(Admin\ Panel\)\ -\ .jpg');
+}
+.container>a:nth-child(9){
+    background-image: url('./Assets/media/Assignment\ -8\(Carousel\)\ -\ .jpg');
+}
+.container>a:nth-child(10){
+    background-image: url('./Assets/media/Assignment\ -9\(Form\ Validation\)\ -\ .jpg');
 }
 
 

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    height: 100vh; /*for testing purpose */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+h1 small{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input{
+    padding: 10px;
+}
+
+.msg_display{
+    opacity: 0;
+    width: fit-content;
+    position: absolute;
+    left: 102%;
+    padding: 8px;
+    background-color: red;
+    border-radius: 8px;
+    z-index: 2;
+    pointer-events: none;
+    transition: -4s ease-in-out;
+}
+
+.msg_display::before{
+    content: '';
+    width: 15px;
+    aspect-ratio: 1 / 1;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+}
+.msg_display.active{
+    background-color: limegreen;
+}
+
+.msg_display.active::before{
+    background-color: limegreen;
+}
+
+.checkbox_container{
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.show_password:checked ~ label>small{
+    color: black;
+}
+
+label{
+    cursor: pointer;
+    color: gray;
+}
+
+small:hover{
+    color: black;
+}
+
+.btn{
+    padding:  10px 20px;
+    align-self: start;
+    background-color: limegreen;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    font-weight: bold;
+    color: white;
+}
+.btn:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}

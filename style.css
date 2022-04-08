@@ -9,6 +9,7 @@
 
 body{
     background:linear-gradient(30deg, rgb(30, 90, 218),rgb(218, 30, 30)) ;
+    background-attachment: fixed;
     min-height: 100vh;
 }
 
@@ -120,7 +121,6 @@ body>.container{
 
     .container>a>div{
         font-size: 26px;
-        line-height: 60vh;
     }
     
 }

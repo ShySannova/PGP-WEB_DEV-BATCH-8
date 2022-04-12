@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="display">
+            <h1 class="title">City Name</h1>
+            <strong class="temp_unit"><span>--</span><sup>&#8451;</sup></strong>
+            <div class="condition"><small>----</small></div>
+        </div>
+        <span class="mode">
+            <div class="forecast">
+                <div class="day_report">
+                    <span></span>
+                    <div class="day"><span class="weekday">Day</span> - <span>-----</span></div>
+                    <div class="deg_range"><span>--</span>&deg; / <span>--</span>&deg;</div>
+                </div>
+                <div class="day_report">
+                    <span></span>
+                    <div class="day"><span class="weekday">Day</span> - <span>-----</span></div>
+                    <div class="deg_range"><span>--</span>&deg; / <span>--</span>&deg;</div>
+                </div>
+                <div class="day_report">
+                    <span></span>
+                    <div class="day"><span class="weekday">Day</span> - <span>-----</span></div>
+                    <div class="deg_range"><span>--</span>&deg; / <span>--</span>&deg;</div>
+                </div>
+            </div>
+            <div class="details">
+                <div class="rise_set">
+                    <div><strong>SunRise: </strong><span>00:00:00</span></div>
+                    <div><strong>SunSet: </strong><span>00:00:00</span></div>
+                </div>
+                <div class="more_details">
+                    <div>
+                        <h4>Real Feel</h4>
+                        <h2>--<span>&#8451;</span></h2>
+                    </div>
+                    <div>
+                        <h4>Humidity</h4>
+                        <h2>--%</h2>
+                    </div>
+                    <div>
+                        <h4>Chance of Rain</h4>
+                        <h2>--%</h2>
+                    </div>
+                    <div>
+                        <h4>Pressure</h4>
+                        <h2>---<span>mbar</span></h2>
+                    </div>
+                    <div>
+                        <h4>Wind Speed</h4>
+                        <h2>--km/h</h2>
+                    </div>
+                    <div>
+                        <h4>Air Quality</h4>
+                        <h2>--</h2>
+                    </div>
+                </div>
+            </div>
+        </span>
+        
+        <div class="wrapper">
+            <input type="text" class="search" placeholder="Enter City">
+            <button class="search_btn" onclick="search()">Search</button>
+        </div>
+    </div>
+   
+    
+    
+
+
+    <script type="text/javascript" src="config.js"></script>
+    <script>
+
+
+        let cityName;
+        let city;
+        let cityData;
+
+
+
+        async function getData(cityName){
+            let response = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${config.key}&q=${cityName}`)
+            cityData = await response.json();
+            console.log(cityData),
+            cityData = cityData[0]
+            city = cityData.Key;
+            let weather = await fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${city}?apikey=${config.key}&details=true&metric=true`)
+            let data = await weather.json();
+            console.log(data)
+            display(cityData, data)
+           
+        }
+
+
+
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>

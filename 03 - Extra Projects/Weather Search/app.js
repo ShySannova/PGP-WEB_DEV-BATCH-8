@@ -34,7 +34,7 @@ function display(cityData, data){
     riseSet[0].innerText = riseVal.toLocaleTimeString();
     riseSet[1].innerText = setVal.toLocaleTimeString();
     let realFeel = ((data[0].RealFeelTemperatureShade.Minimum.Value+data[0].RealFeelTemperatureShade.Maximum.Value)/2);
-    moreDetails[0].innerText = realFeel;
+    moreDetails[0].innerText = realFeel.toFixed(1);
     moreDetails[2].innerText = data[0].Day.RainProbability+'%';
     moreDetails[4].innerText = data[0].Day.Wind.Speed.Value+data[0].Day.Wind.Speed.Unit;
     moreDetails[5].innerText = data[0].AirAndPollen[0].Category;

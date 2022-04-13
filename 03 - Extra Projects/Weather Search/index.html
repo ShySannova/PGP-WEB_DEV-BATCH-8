@@ -88,12 +88,12 @@
 
 
         async function getData(cityName){
-            let response = await fetch(`http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${config.key}&q=${cityName}`)
+            let response = await fetch(`https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${config.key}&q=${cityName}`)
             cityData = await response.json();
             console.log(cityData),
             cityData = cityData[0]
             city = cityData.Key;
-            let weather = await fetch(`http://dataservice.accuweather.com/forecasts/v1/daily/5day/${city}?apikey=${config.key}&details=true&metric=true`)
+            let weather = await fetch(`https://dataservice.accuweather.com/forecasts/v1/daily/5day/${city}?apikey=${config.key}&details=true&metric=true`)
             let data = await weather.json();
             console.log(data)
             display(cityData, data)
